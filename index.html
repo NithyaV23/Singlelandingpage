@@ -608,7 +608,22 @@ button:hover {
   color: #333; /* optional: text color */
 }
 
-  
+  @media (max-width: 576px) {
+  .cleaning-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cleaning-title .discount {
+    margin-right: 0 !important;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+}
+
 
    
     @media (max-width: 768px) {
@@ -836,7 +851,7 @@ button:hover {
       width: 220px;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+     
       text-align: center;
       background: #fff;
       transition: transform 0.3s ease;
@@ -852,7 +867,7 @@ button:hover {
 
     .card-img-wrapper img {
       width: 100%;
-      height: 150px;
+    
       object-fit: cover;
       display: block;
     }
@@ -958,6 +973,110 @@ button:hover {
         flex: 1 1 100%;
       }
     }
+    /* packer mobileview */
+@media (max-width: 576px) {
+  .packers-section {
+    padding: 20px 15px;
+  }
+
+  .packers-header {
+    text-align: center;
+  }
+
+  .packers-header h2 {
+    font-size: 20px;
+  }
+
+  .customer-tag {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #007bff;
+  }
+
+  .promo-card {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+
+  .promo-content h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .promo-content p {
+    font-size: 14px;
+    margin: 6px 0;
+  }
+
+  .promo-content .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+  }
+
+  .promo-footer h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .book-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+/* quick link @ media query */
+@media (max-width: 576px) {
+  .quick-links {
+    padding: 15px;
+    font-family: Arial, sans-serif;
+  }
+
+  .quick-links h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .quick-links .sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .quick-links ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .quick-links ul li {
+    margin-bottom: 8px;
+  }
+
+  .quick-links ul li a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    word-wrap: break-word; /* allow long links to wrap */
+    display: inline-block;
+    width: 100%;
+  }
+
+  .quick-links ul li a:hover {
+    text-decoration: underline;
+  }
+}
+.quick-links {
+  margin-bottom: 5%;
+}
 
    </style>
  
@@ -1137,55 +1256,55 @@ button:hover {
 
       <div class="scroll-container" id="slider1">
         <div class="card" onclick="openModal('Bathroom Cleaning')">
-          <img src="assets/img/gallery/Artboard 1 (4).jpg" alt="1">
+          <img src="assets/img/gallery/Artboard 1.jpg" alt="1">
           <p class="card-text">Bathroom Cleaning</p>
         </div>
         <div class="card" onclick="openModal('Sofa Cleaning')">
-          <img src="assets/img/gallery/Artboard 2 (4).jpg" alt="2">
+          <img src="assets/img/gallery/Artboard 2.jpg" alt="2">
           <p class="card-text">Sofa Cleaning</p>
         </div>
         <div class="card" onclick="openModal('Kitchen Cleaning')">
-          <img src="assets/img/gallery/Artboard 3 (2).jpg" alt="3">
+          <img src="assets/img/gallery/Artboard 3.jpg" alt="3">
           <p class="card-text">Kitchen Cleaning</p>
         </div>
         <div class="card" onclick="openModal('Vacant Home Deep Cleaning')">
-          <img src="assets/img/gallery/Artboard 4 (2).jpg" alt="4">
+          <img src="assets/img/gallery/Artboard 4.jpg" alt="4">
           <p class="card-text">Vacant Home Deep Cleaning</p>
         </div>
         <div class="card"  onclick="openModal('Occupied Home Deep Cleaning')">
-          <img src="assets/img/gallery/Artboard 5 (2).jpg" alt="5">
+          <img src="assets/img/gallery/Artboard 5.jpg" alt="5">
           <p class="card-text">Occupied Home Deep Cleaning</p>
         </div>
         <div class="card"  onclick="openModal('After Interior Deep Cleaning')">
-          <img src="assets/img/gallery/Artboard 6 (2).jpg" alt="6">
+          <img src="assets/img/gallery/Artboard 6.jpg" alt="6">
           <p class="card-text">After Interior Deep Cleaning</p>
         </div>
         <div class="card"  onclick="openModal('Mattress Cleaning')">
-          <img src="assets/img/gallery/Artboard 7 (1).jpg" alt="7">
+          <img src="assets/img/gallery/Artboard 7.jpg" alt="7">
           <p class="card-text"> Mattress Cleaning</p>
         </div>
         <div class="card"  onclick="openModal('Mini Cleaning Services')">
-          <img src="assets/img/gallery/Artboard 8 (2).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 8.jpg" alt="8">
           <p class="card-text">Mini Cleaning Services</p>
         </div>
          <div class="card"  onclick="openModal('Floor Cleaning')">
-          <img src="assets/img/gallery/Artboard 9 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 9.jpg" alt="8">
           <p class="card-text">Floor Cleaning</p>
         </div>
          <div class="card"  onclick="openModal('Terrace Cleaning')">
-          <img src="assets/img/gallery/Artboard 10 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 10.jpg" alt="8">
           <p class="card-text">Terrace Cleaning</p>
         </div>
          <div class="card"  onclick="openModal('Tank and Sump Cleaning')">
-          <img src="assets/img/gallery/Artboard 11 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 11.jpg" alt="8">
           <p class="card-text">Tank and Sump Cleaning</p>
         </div>
          <div class="card"  onclick="openModal('Varalakshmi Home Cleaning Deals')">
-          <img src="assets/img/gallery/Artboard 12 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 12.jpg" alt="8">
           <p class="card-text">Varalakshmi Home Cleaning Deals</p>
         </div>
            <div class="card"  onclick="openModal('Varalakshmi Home Cleaning Deals')">
-          <img src="assets/img/gallery/Artboard 13 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 13.jpg" alt="8">
           <p class="card-text">Varalakshmi Home Cleaning Deals</p>
         </div>
         
@@ -1206,39 +1325,39 @@ button:hover {
 
       <div class="scroll-container" id="slider1">
         <div class="card"  onclick="openModal('Rental Painting')">
-          <img src="assets/img/gallery/Artboard 14 (1).jpg" alt="1">
+          <img src="assets/img/gallery/Artboard 14.jpg" alt="1">
           <p class="card-text">Rental Painting</p>
         </div>
         <div class="card"  onclick="openModal('Interior Painting')">
-          <img src="assets/img/gallery/Artboard 15 (1).jpg" alt="2">
+          <img src="assets/img/gallery/Artboard 15.jpg" alt="2">
           <p class="card-text">Interior Painting</p>
         </div>
         <div class="card"  onclick="openModal('Exterior Painting')">
-          <img src="assets/img/gallery/Artboard 16 (1).jpg" alt="3">
+          <img src="assets/img/gallery/Artboard 16.jpg" alt="3">
           <p class="card-text">Exterior Painting</p>
         </div>
         <div class="card"  onclick="openModal('Interior Texture')">
-          <img src="assets/img/gallery/Artboard 17 (1).jpg" alt="4">
+          <img src="assets/img/gallery/Artboard 17.jpg" alt="4">
           <p class="card-text">Interior Texture</p>
         </div>
         <div class="card"  onclick="openModal('Exterior Texture')">
-          <img src="assets/img/gallery/Artboard 18 (1).jpg" alt="5">
+          <img src="assets/img/gallery/Artboard 18.jpg" alt="5">
           <p class="card-text">Exterior Texture</p>
         </div>
         <div class="card"  onclick="openModal('Wood Polish')">
-          <img src="assets/img/gallery/Artboard 19 (1).jpg" alt="6">
+          <img src="assets/img/gallery/Artboard 19.jpg" alt="6">
           <p class="card-text">Wood Polish</p>
         </div>
         <div class="card"  onclick="openModal('Waterproofing')">
-          <img src="assets/img/gallery/Artboard 20 (1).jpg" alt="7">
+          <img src="assets/img/gallery/Artboard 20.jpg" alt="7">
           <p class="card-text">Waterproofing</p>
         </div>
         <div class="card"  onclick="openModal('Wallpaper')">
-          <img src="assets/img/gallery/Artboard 21 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 21.jpg" alt="8">
           <p class="card-text">Wallpaper</p>
         </div>
          <div class="card"  onclick="openModal('Grouting Services')">
-          <img src="assets/img/gallery/Artboard 22 (1).jpg" alt="8">
+          <img src="assets/img/gallery/Artboard 22.jpg" alt="8">
           <p class="card-text">Grouting Services</p>
         </div>
        
@@ -1259,23 +1378,23 @@ button:hover {
 
       <div class="scroll-container" id="slider1">
         <div class="card">
-          <img src="assets/img/gallery/pest1.jpg" alt="1">
+          <img src="assets/img/gallery/Artboard 25 copy 2.jpg" alt="1">
           <p class="card-text">Bathroom Cleaning</p>
         </div>
         <div class="card">
-          <img src="assets/img/gallery/pest2.jpg" alt="2">
+          <img src="assets/img/gallery/Artboard 26.jpg" alt="2">
           <p class="card-text">Sofa Cleaning</p>
         </div>
         <div class="card">
-          <img src="assets/img/gallery/pest3.jpg" alt="3">
+          <img src="assets/img/gallery/Artboard 27.jpg" alt="3">
           <p class="card-text">Kitchen Cleaning</p>
         </div>
         <div class="card">
-          <img src="assets/img/gallery/pest4.jpg" alt="4">
+          <img src="assets/img/gallery/Artboard 28.jpg" alt="4">
           <p class="card-text">Vacant Home Deep Cleaning</p>
         </div>
         <div class="card">
-          <img src="assets/img/gallery/pest5.jpg" alt="5">
+          <img src="assets/img/gallery/Artboard 29.jpg" alt="5">
           <p class="card-text">Occupied Home Deep Cleaning</p>
         </div>
       
@@ -1293,7 +1412,15 @@ button:hover {
     <h3 id="modalTitle">Service Booking</h3>
     <input type="text" placeholder="Your Name" />
     <input type="email" placeholder="Your Email" />
-    <textarea placeholder="Describe your request..."></textarea>
+     <input
+      type="tel"
+      name="mobile"
+      placeholder="10-digit Indian number"
+      pattern="[6-9]{1}[0-9]{9}"
+      maxlength="10"
+      required
+    />
+ 
     <button>Submit</button>
   </div>
 </div>
@@ -1320,12 +1447,12 @@ button:hover {
         <h1>SHIFT ANYTHING , ANYWHERE !!</h1>
         <p>Fast & Safe Always</p>
         <p class="price">Just at ₹1999 <small>onwards*</small></p>
-        <img class="promo-image" src="https://i.imgur.com/DZn8Fgi.png" alt="Packers Movers Image">
+        <!-- <img class="promo-image" src="assets/img/gallery/shift.jpg" alt="Packers Movers Image"> -->
       </div>
 
       <div class="promo-footer">
         <h3>SHIFTING IN 21+ CITIES</h3>
-        <button class="book-btn">Book Now</button>
+        <button class="book-btn" onclick="openModal('book now')" >Book Now</button>
       </div>
     </div>
   </div>
@@ -1344,32 +1471,32 @@ button:hover {
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 23.jpg" alt="Mosaic Floor">
-          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+          <img src="assets/img/gallery/floor 1.jpg" alt="Mosaic Floor">
+
         </div>
         <div class="card-title">Mosaic Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 24.jpg" alt="Indian Marble">
-          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+          <img src="assets/img/gallery/floor2.jpg" alt="Indian Marble">
+       
         </div>
         <div class="card-title">Indian Marble Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 25 copy.jpg" alt="Italian Marble">
-          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+          <img src="assets/img/gallery/floor 3.jpg" alt="Italian Marble">
+    
         </div>
         <div class="card-title">Italian Marble floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 25.jpg" alt="Granite Floor">
-          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+          <img src="assets/img/gallery/floor 4.jpg" alt="Granite Floor">
+        
         </div>
         <div class="card-title">Granite Floor Polishing</div>
       </div>
@@ -1390,32 +1517,39 @@ button:hover {
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
-          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+          <img src="assets/img/gallery/appliance 1.jpg" alt="Mosaic Floor">
+ 
         </div>
         <div class="card-title">Mosaic Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
-          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+          <img src="assets/img/gallery/appliance 2.jpg" alt="Indian Marble">
+         
         </div>
         <div class="card-title">Indian Marble Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
-          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+          <img src="assets/img/gallery/appliance 3.jpg" alt="Italian Marble">
+      
         </div>
         <div class="card-title">Italian Marble floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
-          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+          <img src="assets/img/gallery/appliance 4.jpg" alt="Granite Floor">
+        
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+        <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/appliance5.jpg" alt="Granite Floor">
+        
         </div>
         <div class="card-title">Granite Floor Polishing</div>
       </div>
@@ -1433,32 +1567,32 @@ button:hover {
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
-          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+          <img src="assets/img/gallery/home 1.jpg" alt="Mosaic Floor">
+      
         </div>
         <div class="card-title">Mosaic Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
-          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+          <img src="assets/img/gallery/home 2.jpg" alt="Indian Marble">
+         
         </div>
         <div class="card-title">Indian Marble Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
-          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+          <img src="assets/img/gallery/home 3.jpg" alt="Italian Marble">
+        
         </div>
         <div class="card-title">Italian Marble floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
-          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+          <img src="assets/img/gallery/home 4.jpg" alt="Granite Floor">
+      
         </div>
         <div class="card-title">Granite Floor Polishing</div>
       </div>
@@ -1472,39 +1606,27 @@ button:hover {
       <!-- <span class="shine-badge">Shine Like New</span> -->
     </div>
 
-    <div class="card-grid">
+    <div class="card-grid" style="margin-right: 50%;">
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 23.jpg" alt="Mosaic Floor">
-          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+          <img src="assets/img/gallery/facility 1 (1).jpg" alt="Mosaic Floor">
+          
         </div>
         <div class="card-title">Mosaic Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 24.jpg" alt="Indian Marble">
-          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+          <img src="assets/img/gallery/facility 2.jpg" alt="Indian Marble">
+          
         </div>
         <div class="card-title">Indian Marble Floor Polishing</div>
       </div>
 
-      <div class="floor-card">
-        <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 25 copy.jpg" alt="Italian Marble">
-          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
-        </div>
-        <div class="card-title">Italian Marble floor Polishing</div>
-      </div>
+   
 
-      <div class="floor-card">
-        <div class="card-img-wrapper">
-          <img src="assets/img/gallery/Artboard 25.jpg" alt="Granite Floor">
-          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
-        </div>
-        <div class="card-title">Granite Floor Polishing</div>
-      </div>
+    
 
     </div>
   </div>
@@ -1515,39 +1637,33 @@ button:hover {
       <!-- <span class="shine-badge">Shine Like New</span> -->
     </div>
 
-    <div class="card-grid">
+    <div class="card-grid" style="margin-right: 30% ;">
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
-          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+          <img src="assets/img/gallery/popular.jpg" alt="Mosaic Floor">
+          
         </div>
         <div class="card-title">Mosaic Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
-          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+          <img src="assets/img/gallery/popular2.jpg" alt="Indian Marble">
+   
         </div>
         <div class="card-title">Indian Marble Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
-          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+          <img src="assets/img/gallery/popular3.jpg" alt="Italian Marble">
+      
         </div>
         <div class="card-title">Italian Marble floor Polishing</div>
       </div>
 
-      <div class="floor-card">
-        <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
-          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
-        </div>
-        <div class="card-title">Granite Floor Polishing</div>
-      </div>
+      
 
     </div>
   </div>
@@ -1558,39 +1674,33 @@ button:hover {
       <!-- <span class="shine-badge">Shine Like New</span> -->
     </div>
 
-    <div class="card-grid">
+    <div class="card-grid" style="margin-right: 30%;">
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
-          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+          <img src="assets/img/gallery/trending.jpg" alt="Mosaic Floor">
+ 
         </div>
         <div class="card-title">Mosaic Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
-          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+          <img src="assets/img/gallery/trending2.jpg" alt="Indian Marble">
+         
         </div>
         <div class="card-title">Indian Marble Floor Polishing</div>
       </div>
 
       <div class="floor-card">
         <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
-          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+          <img src="assets/img/gallery/trending 3.jpg" alt="Italian Marble">
+        
         </div>
         <div class="card-title">Italian Marble floor Polishing</div>
       </div>
 
-      <div class="floor-card">
-        <div class="card-img-wrapper">
-          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
-          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
-        </div>
-        <div class="card-title">Granite Floor Polishing</div>
-      </div>
+   
 
     </div>
   </div>
@@ -1873,9 +1983,10 @@ Services</div>
       <li><a href="https://example.com/painting-services-bangalore" target="_blank">Painting Services in Bangalore</a></li>
       <li><a href="https://example.com/appliance-services-bangalore" target="_blank">Appliance Services in Bangalore</a></li>
       <li><a href="https://example.com/home-repair-bangalore" target="_blank">Home Repair Services in Bangalore</a></li>
-      <li><a href="https://example.com/facility-management-bangalore" target="_blank">Corporate Facility Management in Bangalore</a></li>
+      <li><a href="https://example.com/facility-management-bangalore" target="_blank" >Corporate Facility Management in Bangalore</a></li>
     </ul>
   </div>
+  
 
     <!-- End Projects Area -->
 
