@@ -31,9 +31,104 @@
 
 </head>
 <style>
- 
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 
- 
+.scroll-container {
+  overflow-x: auto;
+}
+
+
+  .banner-area {
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+      color: #fff;
+      position: relative;
+    }
+
+    .content h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 18px;
+    }
+
+    .video-button a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #fff;
+      background: #f05a28;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .appinment-forms {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .appinment-forms h2 {
+      color: #fff;
+    }
+
+    .form-control,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .btn-animation {
+      background: #fff;
+      color: #333;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+    }
+
+    /* Responsive banners */
+    .desktop-banner {
+      display: block;
+    }
+
+    .mobile-banner {
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .desktop-banner {
+        display: none;
+      }
+
+      .mobile-banner {
+        display: block;
+      }
+
+      .content h2 {
+        font-size: 28px;
+      }
+
+      .appinment-forms {
+        margin-top: 20px;
+      }
+    }
 
 
 button {
@@ -203,7 +298,681 @@ button:hover {
         font-size: 28px;
       }
     }
-  </style>
+     .banner-area {
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: #fff;
+      text-align: left;
+    }
+
+    .banner-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .banner-content h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .banner-content p {
+      font-size: 18px;
+    }
+
+    .banner-content span {
+      color: #ffcc00;
+    }
+
+    .video-button a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Desktop and Mobile visibility */
+    .desktop-banner {
+      display: block;
+    }
+
+    .mobile-banner {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+  .banner,
+  .slider,
+  .slide {
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  .card {
+    flex: 0 0 80%; /* or 100% */
+    max-width: 100%;
+  }
+
+  .scroll-wrapper {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .arrow {
+    display: none; /* hide arrows if needed */
+  }
+}
+
+
+    /* @media (max-width: 767px) {
+      .desktop-banner {
+        display: none;
+      }
+
+      .mobile-banner {
+        display: block;
+      }
+
+      .banner-content h2 {
+        font-size: 28px;
+      }
+    }
+   */
+
+/* Force banner and slider to fit screen */
+.banner, .slider, .slide {
+  width: 100%;
+}
+
+    /* banner */
+    .banner {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .desktop-banner {
+      display: block;
+    }
+
+    .mobile-banner {
+      display: none;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .banner, .slider, .slide {
+  width: 100%;
+}
+
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .nav-btn.left {
+      left: 10px;
+    }
+
+    .nav-btn.right {
+      right: 10px;
+    }
+
+    /* ================= Service Grid Section ================= */
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .service-item {
+      text-align: center;
+      flex: 1 1 200px;
+    }
+
+    .service-item img {
+      max-width: 50px;
+      height: auto;
+    }
+
+    .service-item span {
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    /* ================= Responsive Media Queries ================= */
+
+    /* Tablet (768px - 1024px) */
+    @media (max-width: 1024px) {
+      .service-grid {
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .service-item {
+        flex: 1 1 45%; /* 2 items per row */
+      }
+
+      .nav-btn {
+        padding: 8px;
+        font-size: 18px;
+      }
+    }
+
+    /* Mobile (below 768px) */
+    @media (max-width: 767px) {
+      .desktop-banner {
+        display: none;
+      }
+
+      .mobile-banner {
+        display: block;
+      }
+
+      .slider img {
+        height: auto;
+      }
+
+      .service-grid {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+      }
+
+      .service-item {
+        flex: 1 1 100%;
+        text-align: left;
+        padding-left: 10px;
+      }
+
+      .service-item img {
+        max-width: 40px;
+      }
+
+      .service-item span {
+        font-size: 13px;
+      }
+
+      .nav-btn {
+        padding: 6px;
+        font-size: 16px;
+      }
+    }
+
+/* cleanings */
+
+
+
+
+
+ .container {
+      padding: 20px;
+    }
+
+    .cleaning-services {
+      margin-bottom: 50px;
+    }
+
+    .cleaning-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .discount {
+      background-color: orangered;
+    width:15% ;
+    border-radius: 5px;
+    text-align: center;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .scroll-wrapperr {
+      position: relative;
+    }
+
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 0;
+    }
+.card {
+  flex: 0 0 auto;
+  width: 180px;
+  margin-right: 20px;
+  background: none;      /* remove background box */
+  border: none;          /* remove border */
+  border-radius: 0;      /* no rounded corners */
+  padding: 0;            /* no inner spacing */
+  box-shadow: none;      /* no shadow */
+  text-align: center;
+}
+
+
+    /* .card {
+      flex: 0 0 auto;
+      width: 180px;
+      margin-right: 20px;
+      background: #e6f2ff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    } */
+
+   .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* remove image round corners if you had */
+}
+
+.card-text {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; /* optional: text color */
+}
+
+  
+
+   
+    @media (max-width: 768px) {
+      .card {
+        width: 140px;
+        margin-right: 10px;
+      }
+
+      .arrow {
+        font-size: 20px;
+        padding: 8px;
+      }
+    }
+  
+
+
+ .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .modal-content h3 {
+      margin-top: 0;
+    }
+
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .modal-content button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 24px;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 140px;
+      }
+
+      .arrow {
+        font-size: 18px;
+        padding: 4px 10px;
+      }
+    }
+/* packers */
+
+ .packers-section {
+      display: flex;
+      flex-direction: column;
+      max-width: 1000px;
+      margin: auto;
+      background: #f9f9f9;
+    }
+
+    .packers-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .packers-header h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .customer-tag {
+      background-color: #00b3a7;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .promo-card {
+      background: #eaf5ff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .promo-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .promo-content h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .promo-content p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .promo-content .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .promo-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .promo-footer {
+      background: linear-gradient(to right, #ff6600, #ff9966);
+      padding: 15px;
+      text-align: center;
+      position: relative;
+    }
+
+    .promo-footer h3 {
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .book-btn {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #99002b;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .packers-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .book-btn {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+      }
+
+      .promo-footer {
+        text-align: center;
+      }
+    }
+    /* floor painting */
+     .Floor-Polishing {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .Floor-Polishing h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .shine-badge {
+      background-color: #ffdc00;
+      color: #000;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .floor-card {
+      width: 220px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      background: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .floor-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-wrapper {
+      position: relative;
+    }
+
+    .card-img-wrapper img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .price-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #000;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    .price-badge.blue {
+      background-color: #00aaff;
+    }
+
+    .price-badge.yellow {
+      background-color: #ffc107;
+    }
+
+    .price-badge.black {
+      background-color: #000;
+    }
+
+    .card-title {
+      padding: 12px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .floor-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .floor-card {
+        width: 100%;
+      }
+    }
+    /* quick link */
+     .quick-links {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .quick-links h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .sub-heading {
+      font-size: 20px;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .city-list,
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .city-list li,
+    .service-list li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 16px;
+    }
+
+    .city-list li::before,
+    .service-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: orange;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      color: orange;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .city-list li,
+      .service-list li {
+        flex: 1 1 100%;
+      }
+    }
+
+   </style>
+ 
+  
+  
+   
+
+
+
+   
+
+ 
+   
+   
+
 
 <body>
 
@@ -319,360 +1088,516 @@ button:hover {
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
+     
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area bg-cover shadow theme-hard text-light text-multi-weight" style="background-image: url(assets/img/banner/19.jpg);">
-        
-        <div class="banner-items">
-            <div class="box-table">
-                <div class="box-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="content">
-                                    <h2 data-animation="animated slideInRight">Painting your <span>worries away</span></h2>
-                                   <p>
-                                    Per Sqft Charges Rs.5/-<span style="font-size: 6px;margin-top:10px;">*conditions apply  </span>                                 </p>
-                                    <div class="video-button">
-                                        <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-btn theme"><i class="fal fa-play"></i>Our Story</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="appinment-forms">
-                                    <h2>For Enquiry</h2>
-                                    <p>
-                                        Get a quick response within 2 hours
-                                    </p>
-                                    <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                                    <span class="alert-error"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                                    <span class="alert-error"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                                    <span class="alert-error"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <select>
-                                                        <option value="1">Chose Subject</option>
-                                                        <option value="2">Facility Management</option>
-                                                        <option value="4">Civil Services</option>
-                                                        <option value="5">Painting Services</option>
-                                                        <option value="6">Deep Cleaning</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <button class="btn-animation dark border" type="submit" name="submit" id="submit">
-                                                    <span>Get Estimate <i class="fas fa-angle-right"></i></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <!-- Alert Message -->
-                                        <div class="col-lg-12 alert-notification">
-                                            <div id="message" class="alert-msg"></div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Shape -->
-                <div class="shape-bottom-center" style="background-image: url(assets/img/shape/32.png);"></div>
-                <!-- Shape -->
-            </div>
-        </div>
+   <!-- Desktop View Slider -->
+  <div class="banner desktop-banner">
+    <div class="slider">
+      <div class="slide active">
+        <img src="assets/img/service/2.png" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="assets/img/service/3.png" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="assets/img/service/4.png" alt="Slide 3">
+      </div>
 
-            
+      <!-- Navigation Buttons -->
+      <div class="nav-btn left" onclick="changeSlide(-1)">❮</div>
+      <div class="nav-btn right" onclick="changeSlide(1)">❯</div>
     </div>
+  </div>
+
+  <!-- Mobile View (optional image) -->
+  <div class="banner mobile-banner">
+    <img src="assets/img/service/5.png" alt="Mobile Banner" />
+  </div>
+
+
+
     <!-- End Banner -->
 
  
-<!-- service -->
- <div class="container" style="padding-top:50px;">
-<div class="row">
-    <div class="col-lg-6">
-    <h2>What Services are you looking for?</h2>
-      <div class="service-grid">
-        <div class="service-item">
-             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img src="https://img.icons8.com/ios-filled/50/maintenance.png" alt="Women's Salon"/>
-        <br>
-          <span>Facility management Services</span>
-            </a>
+
+
+<!-- cleaning start -->
+<div class="container">
+  <div class="cleaning-services">
+    <div class="cleaning-title">
+      <h2>Cleaning Services</h2>
+      <div class="discount" style="margin-right: -30;">Up to 50% off</div>
+    </div>
+
+    <div class="scroll-wrapperr">
+      <!-- <div class="arrow arrow-left" onclick="scrollSlider('slider1', -1)">&#8592;</div>
+      <div class="arrow arrow-right" onclick="scrollSlider('slider1', 1)">&#8594;</div> -->
+
+      <div class="scroll-container" id="slider1">
+        <div class="card" onclick="openModal('Bathroom Cleaning')">
+          <img src="assets/img/gallery/Artboard 1 (4).jpg" alt="1">
+          <p class="card-text">Bathroom Cleaning</p>
         </div>
-        <div class="service-item">
-  <a href="#" data-bs-toggle="modal" data-bs-target="#propertyModal">
-    <img src="https://img.icons8.com/ios-filled/50/property.png" alt="Property Maintenance"/>
-    <br>
-    <span>Property Maintenance</span>
-  </a>
-</div>
-<div class="service-item">
-  <a href="#" data-bs-toggle="modal" data-bs-target="#paintingModal">
-    <img src="https://img.icons8.com/ios-filled/50/paint-brush.png" alt="Civil and Painting Contracts"/>
-    <br>
-    <span>Civil and Painting Contracts</span>
-  </a>
-</div>
-<div class="service-item">
-  <a href="#" data-bs-toggle="modal" data-bs-target="#constructionModal">
-    <img src="https://img.icons8.com/ios-filled/50/000000/under-construction.png" alt="Construction Projects Management"/>
-    <br>
-    <span>Deep Cleaning Services</span>
-  </a>
-</div>
+        <div class="card" onclick="openModal('Sofa Cleaning')">
+          <img src="assets/img/gallery/Artboard 2 (4).jpg" alt="2">
+          <p class="card-text">Sofa Cleaning</p>
+        </div>
+        <div class="card" onclick="openModal('Kitchen Cleaning')">
+          <img src="assets/img/gallery/Artboard 3 (2).jpg" alt="3">
+          <p class="card-text">Kitchen Cleaning</p>
+        </div>
+        <div class="card" onclick="openModal('Vacant Home Deep Cleaning')">
+          <img src="assets/img/gallery/Artboard 4 (2).jpg" alt="4">
+          <p class="card-text">Vacant Home Deep Cleaning</p>
+        </div>
+        <div class="card"  onclick="openModal('Occupied Home Deep Cleaning')">
+          <img src="assets/img/gallery/Artboard 5 (2).jpg" alt="5">
+          <p class="card-text">Occupied Home Deep Cleaning</p>
+        </div>
+        <div class="card"  onclick="openModal('After Interior Deep Cleaning')">
+          <img src="assets/img/gallery/Artboard 6 (2).jpg" alt="6">
+          <p class="card-text">After Interior Deep Cleaning</p>
+        </div>
+        <div class="card"  onclick="openModal('Mattress Cleaning')">
+          <img src="assets/img/gallery/Artboard 7 (1).jpg" alt="7">
+          <p class="card-text"> Mattress Cleaning</p>
+        </div>
+        <div class="card"  onclick="openModal('Mini Cleaning Services')">
+          <img src="assets/img/gallery/Artboard 8 (2).jpg" alt="8">
+          <p class="card-text">Mini Cleaning Services</p>
+        </div>
+         <div class="card"  onclick="openModal('Floor Cleaning')">
+          <img src="assets/img/gallery/Artboard 9 (1).jpg" alt="8">
+          <p class="card-text">Floor Cleaning</p>
+        </div>
+         <div class="card"  onclick="openModal('Terrace Cleaning')">
+          <img src="assets/img/gallery/Artboard 10 (1).jpg" alt="8">
+          <p class="card-text">Terrace Cleaning</p>
+        </div>
+         <div class="card"  onclick="openModal('Tank and Sump Cleaning')">
+          <img src="assets/img/gallery/Artboard 11 (1).jpg" alt="8">
+          <p class="card-text">Tank and Sump Cleaning</p>
+        </div>
+         <div class="card"  onclick="openModal('Varalakshmi Home Cleaning Deals')">
+          <img src="assets/img/gallery/Artboard 12 (1).jpg" alt="8">
+          <p class="card-text">Varalakshmi Home Cleaning Deals</p>
+        </div>
+           <div class="card"  onclick="openModal('Varalakshmi Home Cleaning Deals')">
+          <img src="assets/img/gallery/Artboard 13 (1).jpg" alt="8">
+          <p class="card-text">Varalakshmi Home Cleaning Deals</p>
+        </div>
         
       </div>
     </div>
-    <div class="col-lg-6">
-       <div class="right-panel">
-      <img src="assets/img/service/2.png" alt="Salon at home"/>
-      <img src="assets/img/service/3.png" alt="Massage"/>
-      <img src="assets/img/service/4.png" alt="Kitchen Repair"/>
-      <img src="assets/img/service/5.png" alt="AC Cleaning"/>
-    </div> 
+    
+  </div>
+  
+   <div class="cleaning-services">
+    <div class="cleaning-title">
+      <h2>Painting Services</h2>
+      <div class="discount" style="margin-right: -30;">100 % In House Staff</div>
     </div>
+
+    <div class="scroll-wrapperr">
+      <!-- <div class="arrow arrow-left" onclick="scrollSlider('slider1', -1)">&#8592;</div>
+      <div class="arrow arrow-right" onclick="scrollSlider('slider1', 1)">&#8594;</div> -->
+
+      <div class="scroll-container" id="slider1">
+        <div class="card"  onclick="openModal('Rental Painting')">
+          <img src="assets/img/gallery/Artboard 14 (1).jpg" alt="1">
+          <p class="card-text">Rental Painting</p>
+        </div>
+        <div class="card"  onclick="openModal('Interior Painting')">
+          <img src="assets/img/gallery/Artboard 15 (1).jpg" alt="2">
+          <p class="card-text">Interior Painting</p>
+        </div>
+        <div class="card"  onclick="openModal('Exterior Painting')">
+          <img src="assets/img/gallery/Artboard 16 (1).jpg" alt="3">
+          <p class="card-text">Exterior Painting</p>
+        </div>
+        <div class="card"  onclick="openModal('Interior Texture')">
+          <img src="assets/img/gallery/Artboard 17 (1).jpg" alt="4">
+          <p class="card-text">Interior Texture</p>
+        </div>
+        <div class="card"  onclick="openModal('Exterior Texture')">
+          <img src="assets/img/gallery/Artboard 18 (1).jpg" alt="5">
+          <p class="card-text">Exterior Texture</p>
+        </div>
+        <div class="card"  onclick="openModal('Wood Polish')">
+          <img src="assets/img/gallery/Artboard 19 (1).jpg" alt="6">
+          <p class="card-text">Wood Polish</p>
+        </div>
+        <div class="card"  onclick="openModal('Waterproofing')">
+          <img src="assets/img/gallery/Artboard 20 (1).jpg" alt="7">
+          <p class="card-text">Waterproofing</p>
+        </div>
+        <div class="card"  onclick="openModal('Wallpaper')">
+          <img src="assets/img/gallery/Artboard 21 (1).jpg" alt="8">
+          <p class="card-text">Wallpaper</p>
+        </div>
+         <div class="card"  onclick="openModal('Grouting Services')">
+          <img src="assets/img/gallery/Artboard 22 (1).jpg" alt="8">
+          <p class="card-text">Grouting Services</p>
+        </div>
+       
+        
+      </div>
+    </div>
+    
+  </div>
+  <div class="cleaning-services">
+    <div class="cleaning-title">
+      <h2>Pest Control</h2>
+      <div class="discount" style="margin-right: -30;">Licensed Company</div>
+    </div>
+
+    <div class="scroll-wrapperr">
+      <!-- <div class="arrow arrow-left" onclick="scrollSlider('slider1', -1)">&#8592;</div>
+      <div class="arrow arrow-right" onclick="scrollSlider('slider1', 1)">&#8594;</div> -->
+
+      <div class="scroll-container" id="slider1">
+        <div class="card">
+          <img src="assets/img/gallery/pest1.jpg" alt="1">
+          <p class="card-text">Bathroom Cleaning</p>
+        </div>
+        <div class="card">
+          <img src="assets/img/gallery/pest2.jpg" alt="2">
+          <p class="card-text">Sofa Cleaning</p>
+        </div>
+        <div class="card">
+          <img src="assets/img/gallery/pest3.jpg" alt="3">
+          <p class="card-text">Kitchen Cleaning</p>
+        </div>
+        <div class="card">
+          <img src="assets/img/gallery/pest4.jpg" alt="4">
+          <p class="card-text">Vacant Home Deep Cleaning</p>
+        </div>
+        <div class="card">
+          <img src="assets/img/gallery/pest5.jpg" alt="5">
+          <p class="card-text">Occupied Home Deep Cleaning</p>
+        </div>
+      
+   
+        
+      </div>
+    </div>
+    
+  </div>
 </div>
+
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle">Service Booking</h3>
+    <input type="text" placeholder="Your Name" />
+    <input type="email" placeholder="Your Email" />
+    <textarea placeholder="Describe your request..."></textarea>
+    <button>Submit</button>
+  </div>
 </div>
+<!-- Repeat same structure for Painting Services and Pest Control -->
+
+
+<!-- cleaning end -->
+
+
+<!-- packers -->
 
 
 
- <section class="process-section">
-    <h2>Painting Process</h2>
-    <div class="steps-container">
-      <div class="step">
-        <div class="step-icon">
-          <img src="https://img.icons8.com/ios/50/phone--v1.png" alt="Contact Us"/>
-        </div>
-        <div class="step-number">STEP 1</div>
-        <div class="step-label">Contact Us</div>
-      </div>
-
-      <div class="step">
-        <div class="step-icon">
-          <img src="https://img.icons8.com/ios/50/paint-palette.png" alt="Consultation"/>
-        </div>
-        <div class="step-number">STEP 2</div>
-        <div class="step-label">On-Site Product &<br/>Colour Consultation</div>
-      </div>
-
-      <div class="step">
-        <div class="step-icon">
-          <img src="https://img.icons8.com/ios/50/paint-bucket.png" alt="Painting Starts"/>
-        </div>
-        <div class="step-number">STEP 3</div>
-        <div class="step-label">Painting Starts</div>
-      </div>
-
-      <div class="step">
-        <div class="step-icon">
-          <img src="https://img.icons8.com/ios/50/inspection.png" alt="Supervision"/>
-        </div>
-        <div class="step-number">STEP 4</div>
-        <div class="step-label">Regular Site Supervision</div>
-      </div>
-
-      <div class="step">
-        <div class="step-icon">
-          <img src="https://img.icons8.com/ios/50/stopwatch--v1.png" alt="Delivery"/>
-        </div>
-        <div class="step-number">STEP 5</div>
-        <div class="step-label">On-Time Site Delivery</div>
-      </div>
-    </div>
-  </section>
-
-
-
-
- <h2 style="margin-left: 50%;">FAQs</h2>
-  <div class="accordion">
-    <div class="faq-item">
-      <div class="faq-question">
-        What is ColourDrive?
-        <span class="faq-icon">+</span>
-      </div>
-      <div class="faq-answer">
-        ColourDrive is a professional painting service platform offering interior and exterior painting, waterproofing, and texture finishes.
-      </div>
+<div class="packers-section">
+    <!-- Header Section -->
+    <div class="packers-header">
+      <h2>Packers & Movers</h2>
+      <div class="customer-tag">1Lakh + Happy Customer</div>
     </div>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        Why ColourDrive and not other painters?
-        <span class="faq-icon">+</span>
+    <!-- Promo Card Section -->
+    <div class="promo-card">
+      <div class="promo-content">
+        <h1>SHIFT ANYTHING , ANYWHERE !!</h1>
+        <p>Fast & Safe Always</p>
+        <p class="price">Just at ₹1999 <small>onwards*</small></p>
+        <img class="promo-image" src="https://i.imgur.com/DZn8Fgi.png" alt="Packers Movers Image">
       </div>
-      <div class="faq-answer">
-        ColourDrive ensures quality work with trained painters, project managers, transparent pricing, and timely delivery.
-      </div>
-    </div>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        What is official address of ColourDrive?
-        <span class="faq-icon">+</span>
-      </div>
-      <div class="faq-answer">
-        The official address can be found on their contact page. Typically located in major cities like Bangalore.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        What is official time to visit ColourDrive office?
-        <span class="faq-icon">+</span>
-      </div>
-      <div class="faq-answer">
-        ColourDrive office is open from 10:00 AM to 6:00 PM on weekdays.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        Where is ColourDrive located?
-        <span class="faq-icon">+</span>
-      </div>
-      <div class="faq-answer">
-        They have offices in Bangalore, Hyderabad, Pune, and other metro cities in India.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        Is ColourDrive rated by IPA?
-        <span class="faq-icon">+</span>
-      </div>
-      <div class="faq-answer">
-        Yes, ColourDrive is rated and reviewed by Indian Painting Associations and has received positive customer feedback.
+      <div class="promo-footer">
+        <h3>SHIFTING IN 21+ CITIES</h3>
+        <button class="book-btn">Book Now</button>
       </div>
     </div>
   </div>
 
 
+<!-- floor painting -->
 
 
+ <div class="container">
+    <div class="Floor-Polishing">
+      <h2>Floor Polishing</h2>
+      <span class="shine-badge">Shine Like New</span>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 23.jpg" alt="Mosaic Floor">
+          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Mosaic Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 24.jpg" alt="Indian Marble">
+          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Indian Marble Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 25 copy.jpg" alt="Italian Marble">
+          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Italian Marble floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 25.jpg" alt="Granite Floor">
+          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+
+    </div>
+  </div>
 
 
+<!-- Appliance Services -->
 
+    <div class="container">
+    <div class="Floor-Polishing">
+      <h2>Appliance Services</h2>
+      <span class="shine-badge">100+ booking Per Day</span>
+    </div>
 
+    <div class="card-grid">
 
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
+          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Mosaic Floor Polishing</div>
+      </div>
 
-   
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
+          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Indian Marble Floor Polishing</div>
+      </div>
 
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
+          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Italian Marble floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
+          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Home Repair Services -->
+  <div class="container">
+    <div class="Floor-Polishing">
+      <h2>Home Repair Services</h2>
+      <span class="shine-badge">Trained Team</span>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
+          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Mosaic Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
+          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Indian Marble Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
+          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Italian Marble floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
+          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Corporate Facility Management -->
+    <div class="container">
+    <div class="Floor-Polishing">
+      <h2>Corporate Facility Management</h2>
+      <!-- <span class="shine-badge">Shine Like New</span> -->
+    </div>
+
+    <div class="card-grid">
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 23.jpg" alt="Mosaic Floor">
+          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Mosaic Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 24.jpg" alt="Indian Marble">
+          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Indian Marble Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 25 copy.jpg" alt="Italian Marble">
+          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Italian Marble floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="assets/img/gallery/Artboard 25.jpg" alt="Granite Floor">
+          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Popular Services (In-House Team) -->
+     <div class="container">
+    <div class="Floor-Polishing">
+      <h2>Popular Services (In-House Team)</h2>
+      <!-- <span class="shine-badge">Shine Like New</span> -->
+    </div>
+
+    <div class="card-grid">
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
+          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Mosaic Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
+          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Indian Marble Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
+          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Italian Marble floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
+          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Trending Services -->
+   <div class="container">
+    <div class="Floor-Polishing">
+      <h2>Trending Services</h2>
+      <!-- <span class="shine-badge">Shine Like New</span> -->
+    </div>
+
+    <div class="card-grid">
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/FdS8Ctf.jpg" alt="Mosaic Floor">
+          <div class="price-badge yellow">Starts at<br>Rs15<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Mosaic Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/mT2yytM.jpg" alt="Indian Marble">
+          <div class="price-badge blue">Starts at<br>Rs18<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Indian Marble Floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/EVb0jj6.jpg" alt="Italian Marble">
+          <div class="price-badge black">Starts at<br>Rs40<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Italian Marble floor Polishing</div>
+      </div>
+
+      <div class="floor-card">
+        <div class="card-img-wrapper">
+          <img src="https://i.imgur.com/T2yR8xJ.jpg" alt="Granite Floor">
+          <div class="price-badge black">Starts at<br>Rs20<br>PerSQFT</div>
+        </div>
+        <div class="card-title">Granite Floor Polishing</div>
+      </div>
+
+    </div>
+  </div>
 
     <!-- Start Project Area
     ============================================= -->
-    <div class="project-area overflow-hidden default-padding">
-        <div class="container">
-            <div class="heading-left">
-                <div class="row align-center">
-                    <div class="col-lg-5">
-                        <h5>Successful Project</h5>
-                        <h2>
-                            Keep your vision to our latest projects. 
-                        </h2>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <p>
-                            Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. Prevailed mr tolerably discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="project-items-area">
-                <div class="masonary">
-                    <div id="portfolio-grid" class="gallery-items colums-3">
-                        <!-- Single Item -->
-                        <div class="pf-item">
-                            <div class="project-style-two">
-                                <img src="assets/img/service/big.jpg" alt="Thumb">
-                                <!-- <div class="info">
-                                    <span>House, Office</span>
-                                    <h4><a href="project-details.html">Door Cleaning</a></h4>
-                                </div> -->
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-
-                        <!-- Single Item -->
-                        <div class="pf-item">
-                            <div class="project-style-two">
-                                <img src="assets/img/service/two.jpg" alt="Thumb">
-                                <!-- <div class="info">
-                                    <span>Apartment</span>
-                                    <h4><a href="project-details.html">Garden Cleaning</a></h4>
-                                </div> -->
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-
-                        <!-- Single Item -->
-                        <div class="pf-item">
-                            <div class="project-style-two">
-                                <img src="assets/img/service/three.jpg" alt="Thumb">
-                                <!-- <div class="info">
-                                    <span>Residential, Office</span>
-                                    <h4><a href="project-details.html">Bedroom Cleaning</a></h4>
-                                </div> -->
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-
-                        <!-- Single Item -->
-                        <div class="pf-item">
-                            <div class="project-style-two">
-                                <img src="assets/img/service/two2.jpg" alt="Thumb">
-                                <!-- <div class="info">
-                                    <span>Home, Apartment</span>
-                                    <h4><a href="project-details.html">House Cleaning</a></h4>
-                                </div> -->
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-
-                        <!-- Single Item -->
-                        <div class="pf-item">
-                            <div class="project-style-two">
-                                <img src="assets/img/service/three2.jpg" alt="Thumb">
-                                <!-- <div class="info">
-                                    <span>Office, House</span>
-                                    <h4><a href="project-details.html">Furniture Cleaning</a></h4>
-                                </div> -->
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!-- modal -->
      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Large and Centered -->
@@ -915,6 +1840,43 @@ Services</div>
     </div>
   </div>
 </div>
+ <div class="quick-links">
+    <h2>Quick Links</h2>
+
+    <div class="sub-heading">Provided Services Across Various Cities in India</div>
+    <ul class="city-list">
+      <li><a href="https://example.com/ahmedabad" target="_blank">Ahmedabad</a></li>
+      <li><a href="https://example.com/bhubaneswar" target="_blank">Bhubaneswar</a></li>
+      <li><a href="https://example.com/chennai" target="_blank">Chennai</a></li>
+      <li><a href="https://example.com/delhi" target="_blank">Delhi</a></li>
+      <li><a href="https://example.com/faridabad" target="_blank">Faridabad</a></li>
+      <li><a href="https://example.com/gaziabad" target="_blank">Gaziabad</a></li>
+      <li><a href="https://example.com/hyderabad" target="_blank">Hyderabad</a></li>
+      <li><a href="https://example.com/kochi" target="_blank">Kochi</a></li>
+      <li><a href="https://example.com/kolkata" target="_blank">Kolkata</a></li>
+      <li><a href="https://example.com/lucknow" target="_blank">Lucknow</a></li>
+      <li><a href="https://example.com/mumbai" target="_blank">Mumbai</a></li>
+      <li><a href="https://example.com/mysore" target="_blank">Mysore</a></li>
+      <li><a href="https://example.com/delhi-ncr" target="_blank">Delhi-NCR</a></li>
+      <li><a href="https://example.com/noida" target="_blank">Noida</a></li>
+      <li><a href="https://example.com/patna" target="_blank">Patna</a></li>
+      <li><a href="https://example.com/pune" target="_blank">Pune</a></li>
+      <li><a href="https://example.com/surat" target="_blank">Surat</a></li>
+      <li><a href="https://example.com/vadodara" target="_blank">Vadodara</a></li>
+      <li><a href="https://example.com/vizag" target="_blank">Vizag</a></li>
+    </ul>
+
+    <div class="sub-heading">Other Services We Offer in Bangalore</div>
+    <ul class="service-list">
+      <li><a href="https://example.com/home-cleaning-bangalore" target="_blank">Home Cleaning in Bangalore</a></li>
+      <li><a href="https://example.com/pest-control-bangalore" target="_blank">Pest Control in Bangalore</a></li>
+      <li><a href="https://example.com/painting-services-bangalore" target="_blank">Painting Services in Bangalore</a></li>
+      <li><a href="https://example.com/appliance-services-bangalore" target="_blank">Appliance Services in Bangalore</a></li>
+      <li><a href="https://example.com/home-repair-bangalore" target="_blank">Home Repair Services in Bangalore</a></li>
+      <li><a href="https://example.com/facility-management-bangalore" target="_blank">Corporate Facility Management in Bangalore</a></li>
+    </ul>
+  </div>
+
     <!-- End Projects Area -->
 
     <!-- Start Contact Area 
@@ -1080,7 +2042,64 @@ Services</div>
         item.classList.toggle("active");
       });
     });
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) {
+          slide.classList.add("active");
+        }
+      });
+    }
+
+    function changeSlide(direction) {
+      slideIndex += direction;
+      if (slideIndex < 0) slideIndex = slides.length - 1;
+      if (slideIndex >= slides.length) slideIndex = 0;
+      showSlide(slideIndex);
+    }
+
+    // Auto Slide (optional)
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000); // 5 seconds
+//  cleaning
   
+   
+      
+
+
+  
+  function scrollSlider(id, direction) {
+    const container = document.getElementById(id);
+    const scrollAmount = 200 * direction;
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+
+  function scrollSlider(id, direction) {
+    const container = document.getElementById(id);
+    const scrollAmount = 200 * direction;
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+
+  function openModal(serviceName) {
+    document.getElementById("popupModal").style.display = "block";
+    document.getElementById("modalTitle").textContent = serviceName + " - Booking";
+  }
+
+  function closeModal() {
+    document.getElementById("popupModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("popupModal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+
   </script>
 
     <!-- jQuery Frameworks
